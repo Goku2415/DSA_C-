@@ -4,7 +4,6 @@ public:
             string h=haystack,n=needle;
             int i=0,j=0;
 
-
         while(j<h.length()){
             if(n[i]==h[j]){
                 i++;j++;
@@ -15,6 +14,13 @@ public:
             }
         }
         return -1;
+
+
         
+
+
+
+
+
     }
 };
