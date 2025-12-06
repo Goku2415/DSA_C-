@@ -2,7 +2,7 @@ class Solution {
 public:
     
     int firstUniqChar(string s) {
-        unsigned int freq[25600]={0};
+        int freq[256]={0};
         for(unsigned char c:s){
             freq[c]++; 
             
