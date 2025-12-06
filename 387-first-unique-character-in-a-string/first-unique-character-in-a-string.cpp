@@ -8,7 +8,7 @@ public:
             
         }
         for(int i=0;i<s.length();i++){
-            if(freq[(unsigned char)s[i]]==1){
+            if(freq[s[i]]==1){
                 return i;
             }
 
