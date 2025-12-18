@@ -1,20 +1,27 @@
-    bool compare(int a, int b) {
-        return to_string(a) + to_string(b) > to_string(b) + to_string(a);
-    }
 
 class Solution {
 public:
+    static bool compare(string a, string b) {
+        string t1=a+b;
+        string t2=b+a;
+
+        return t1>t2;
+    }
     string largestNumber(vector<int>& nums) {
 
-        string ans = "";
-        sort(nums.begin(), nums.end(), compare);
+        vector<string>snums;
+        for(auto n:nums){
+            snums.push_back(to_string(n));
+        }
+        sort(snums.begin(), snums.end(), compare);
 
-        for (auto i : nums) {
-            ans += to_string(i);
+        if (snums[0] == "0") return "0";
+        
+        string ans = "";
+        for (auto i : snums) {
+            ans +=i;
         }
 
-        if (ans[0] == '0')
-            return "0";
 
         return ans;
     }
