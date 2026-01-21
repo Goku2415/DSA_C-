@@ -8,11 +8,11 @@ public:
             freq[a]++;
             if (freq[a] > 2) return false; 
         }
-        for(auto a :nums){
-            if(freq[a]>2){
-                return false;
-            }
-        }
+        // for(auto a :nums){
+        //     if(freq[a]>2){
+        //         return false;
+        //     }
+        // }
         
         return true;
     }
