@@ -6,20 +6,8 @@ public:
         while(i<n){
             int val = target ;
             int num = letters[i];
-            cout<<"val is : "<<val<<endl;
-            cout<<"num is : "<<num<<endl;
-            // if(num==val){
-            //     i++;
-            // }
-            // cout<<"letter : "<<letters[i]<<endl;
-            // if(num<=val){
-            //     i++;
-            // }
             if ( letters[i] > target){
-
-                cout<<"letter : "<<letters[i]<<endl;
                 mini = min(num , mini);
-                cout<<"mini is : "<<mini<<endl;
             }
                 i++;
         }
