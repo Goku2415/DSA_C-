@@ -6,7 +6,7 @@ public:
         int n = nums.size();
         int right = n-1;
         int index= 0;
-
+        
         while (index<=right){
             if(nums[index]==0){
                 swap(nums[index],nums[left]);
