@@ -1,8 +1,11 @@
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        int n = intervals.size(); int m = intervals[0].size();
-        vector<vector<int>> ans; vector<int> result;
+        int n = intervals.size();
+        int m = intervals[0].size();
+        
+        vector<vector<int>> ans; 
+        
         sort(intervals.begin(), intervals.end());
 
         ans.push_back(intervals[0]);
