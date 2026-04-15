@@ -9,9 +9,8 @@ public:
     ListNode* temp2 = list2;
     
     while(temp1!= NULL && temp2!=NULL){
-        if(temp1->val < temp2->val){
+        if( temp1->val < temp2->val){
             list1 = list1->next;
-            temp1->next = NULL;
         
             ListNode* ans = new ListNode(temp1->val);
             temp1 = list1;
@@ -25,7 +24,6 @@ public:
             }
         }else if(temp1->val >= temp2->val){
             list2 = list2->next;
-            temp2->next = NULL;
         
             ListNode* ans = new ListNode(temp2->val);
             temp2 = list2;
@@ -43,7 +41,6 @@ public:
     }
     while(list1 != NULL){
          list1 = list1->next;
-            temp1->next = NULL;
         
             ListNode* ans = new ListNode(temp1->val);
             temp1 = list1;
@@ -59,7 +56,6 @@ public:
     
     while(list2 != NULL){
          list2 = list2->next;
-        temp2->next = NULL;
 
         ListNode* ans = new ListNode(temp2->val);
         temp2 = list2;
