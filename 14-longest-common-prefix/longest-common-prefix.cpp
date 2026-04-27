@@ -36,7 +36,8 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
-        if (strs.empty()) return "";
+        if (strs.empty()) 
+        return "";
 
         string prefix = strs[0];
 
@@ -48,7 +49,8 @@ public:
             }
             prefix = prefix.substr(0, j);
 
-            if (prefix.empty()) return "";
+            if (prefix.empty()) 
+            return "";
         }
 
         return prefix;
