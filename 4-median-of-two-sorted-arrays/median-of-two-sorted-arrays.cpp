@@ -19,10 +19,15 @@ public:
         mid = s+(e-s)/2;
             med = nums1[mid];
         }
+
         else{
+        
             mid =  s+(e-s)/2;
+        
             sum = nums1[mid] + nums1[++mid];
+        
             med = sum/2;
+        
         }
 
         return med;
